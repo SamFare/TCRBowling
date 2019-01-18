@@ -6,7 +6,7 @@
   "scripts": {
     "runTests": "jest src/*.test.js",
     "commit": "git add . && git commit -am\"working\" && git push",
-    "revert": "git reset --hard head",
+    "revert": "git add . && git reset --hard head",
     "test": "npm run runTests &&  npm run commit || npm run revert"
   },
   "repository": {
