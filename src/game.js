@@ -1,9 +1,10 @@
+let runningTotal = 0;
 const roll = (pins)  => { 
-
+  runningTotal+=pins
 }
 
 const score = rollValue => {
-  return rollValue === 0? 20 : 0
+  return runningTotal === 0? 0 : 20
 } 
 
 module.exports = {
