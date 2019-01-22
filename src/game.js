@@ -2,8 +2,8 @@ const roll = (pins)  => {
 
 }
 
-const score = () => {
-  return 0;
+const score = rollValue => {
+  return rollValue === 0? 20 : 0
 } 
 
 module.exports = {
