@@ -1,7 +1,7 @@
-const roll = (total, {roll1, roll2})  => { 
+const roll = (game, {roll1, roll2})  => { 
    //return total + roll1 + roll2
    return {
-     totalScore: 0 
+     totalScore: game.totalScore + roll1 + roll2 
    }
 }
 
