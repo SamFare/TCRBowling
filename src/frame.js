@@ -1,4 +1,4 @@
-isSpare = (roll1, roll2) => {
+isSpare = ({roll1, roll2}) => {
     return true;
 }
 
