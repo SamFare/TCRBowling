@@ -7,7 +7,7 @@ test('score is 0 when user rolls 0', () => {
 
 test('when the game is full of single scores the final score is the sum of the scores', () => { 
   const allRollsInGame = new Array(20).fill(1)
-  const gameScore = allRollsInGame.reduce((acc, rollValue) => roll(acc, rollValue))
+  const gameScore = allRollsInGame.reduce((acc, rollValue) => acc + rollValue)
   expect(gameScore).toBe(20)
 })
 
