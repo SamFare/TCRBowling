@@ -1,6 +1,6 @@
 let runningTotal = 0;
-const roll = (pins)  => { 
-  runningTotal+=pins
+const roll = (total, pins)  => { 
+   return total + pins
 }
 
 const score = rollValue => {
