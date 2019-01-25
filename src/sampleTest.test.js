@@ -11,5 +11,10 @@ test('when the game is full of single scores the final score is the sum of the s
   expect(gameScore.totalScore).toBe(20)
 })
 
+test('previous frames are saved are added to frame list', () => { 
+  const game = roll({totalScore: 0, frames: []} , {roll1: 0, roll2: 0})
+  expect(game.frames).toEqual([{roll1: 0, roll2: 0}])
+});
+
 test('When the player rolls a spare the game doubles the score of the next roll', () => { 
 })
