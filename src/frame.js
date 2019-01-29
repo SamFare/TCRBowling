@@ -1,5 +1,9 @@
-isSpare = ({roll1, roll2}) => {
-    return roll1 + roll2 === 10? true : false; 
+isSpare = (frame) => {
+    if(frame) {
+        return frame.roll1 + frame.roll2 === 10? true : false;
+    }
+        return false;
+     
 }
 
 module.exports = {isSpare} 
