@@ -23,3 +23,7 @@ test('there is not a spare when roll 2 is 10', () => {
 test('when roll 1 is 10 it is a strike', () => { 
     expect(isStrike({roll1: 10, roll2: 0})).toBe(true);
 })
+
+test('when roll 2 is 10 it is a strike', () => { 
+    expect(isStrike({roll1: 10, roll2: 0})).toBe(true);
+})
