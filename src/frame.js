@@ -2,8 +2,13 @@ isSpare = (frame) => {
     if(frame) {
         return frame.roll1 + frame.roll2 === 10? true : false;
     }
-        return false;
-     
+        return false;    
 }
 
-module.exports = {isSpare} 
+isStrike = (frame) => { 
+    return true;
+}
+
+
+
+module.exports = {isSpare, isStrike} 
