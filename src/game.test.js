@@ -21,3 +21,9 @@ test('When the player rolls a spare the game doubles the score of the next roll'
   const spare = roll(game , {roll1: 2, roll2: 0})
   expect(spare.totalScore).toBe(14)
 })
+
+test('when one of the rolls is a 10 the next round is doubled', () => { 
+  const game = roll({totalScore: 0, frames: []} , {roll1: 10, roll2: 0})
+  const strike = roll(game , {roll1: 2, roll2: 2})
+  expect(strike.totalScore).toBe(18)
+})
