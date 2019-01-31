@@ -12,6 +12,10 @@ test('flase is returned when no frame is presented', () => {
     expect(isSpare(undefined)).toBe(false);
 })
 
+test('there is not a spare when roll 1 is 10', () => { 
+    expect(isSpare({roll1: 10, roll2: 0})).toBe(false);
+})
+
 test('when roll 1 is 10 it is a strike', () => { 
     expect(isStrike({roll1: 10, roll2: 0})).toBe(true);
 })
