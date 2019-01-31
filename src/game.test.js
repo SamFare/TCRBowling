@@ -1,4 +1,4 @@
-const {roll, score} = require('./game.js')
+const {roll} = require('./game.js')
 
 test('score is 0 when user rolls 0', () => { 
   const game = roll({totalScore: 0, frames: []} , {roll1: 0, roll2: 0})
