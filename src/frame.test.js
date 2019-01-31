@@ -31,3 +31,7 @@ test('when roll 2 is 10 it is a strike', () => {
 test('when neither roll 1 or roll 2 is 10 it is not a strike', () => { 
     expect(isStrike({roll1: 5, roll2: 5})).toBe(false);
 })
+
+test('flase is returned when no frame is presented from isStrike', () => { 
+    expect(isStrike(undefined)).toBe(false);
+})
