@@ -6,7 +6,7 @@ isSpare = (frame) => {
 }
 
 isStrike = (frame) => { 
-    return true;
+    return frame.roll1 === 10 || frame.roll2 === 10;
 }
 
 
