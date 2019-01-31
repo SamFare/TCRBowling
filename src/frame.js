@@ -6,9 +6,7 @@ isSpare = (frame) => {
 }
 
 isStrike = (frame) => { 
-    return frame.roll1 === 10 || frame.roll2 === 10;
+    return !!(frame && (frame.roll1 === 10 || frame.roll2 === 10));
 }
-
-
 
 module.exports = {isSpare, isStrike} 
