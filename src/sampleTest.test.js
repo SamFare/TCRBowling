@@ -17,4 +17,7 @@ test('previous frames are saved are added to frame list', () => {
 });
 
 test('When the player rolls a spare the game doubles the score of the next roll', () => { 
+  const game = roll({totalScore: 0, frames: []} , {roll1: 5, roll2: 5})
+  const spare = roll(game , {roll1: 2, roll2: 0})
+  expect(spare.totalScore).toBe(14)
 })
