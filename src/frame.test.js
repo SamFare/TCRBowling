@@ -16,6 +16,10 @@ test('there is not a spare when roll 1 is 10', () => {
     expect(isSpare({roll1: 10, roll2: 0})).toBe(false);
 })
 
+test('there is not a spare when roll 2 is 10', () => { 
+    expect(isSpare({roll1: 0, roll2: 10})).toBe(false);
+})
+
 test('when roll 1 is 10 it is a strike', () => { 
     expect(isStrike({roll1: 10, roll2: 0})).toBe(true);
 })
